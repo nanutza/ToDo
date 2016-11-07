@@ -21,28 +21,30 @@
 
   <nav class="navbar">
     <div class="container-fluid center wrap-float max-w-800 center">
-      <div class="navbar-header">
+      <div class="navbar-header pad-s-1">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-            <a class="navbar-brand" href="/">ToDo</a>
+        <img src="/todo-logo.png"/>
+            <!-- <a class="navbar-brand" href="/">ToDo</a> -->
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="/">Home</a></li>
+        <ul class="nav navbar-nav mar-t-3 ">
+          <li class="active"><a href="/"></a></li>
+          <li class="active"><a href="/"> | Home | </a></li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right mar-t-3 pad-s-1">
             <% if logged_in? %>
 
               <a href="/users/<%= current_user.id %>">Hello <%= current_user.username %></a>
-              <a href="/logout"><span class="glyphicon glyphicon-log-out log"> </span></a>
+              <a href="/logout"><span class="glyphicon glyphicon-log-out log pad-s-1"> </span></a>
               <a href="/logout" class="btn btn-default btn-md">log out</a>
             <% else %>
-              <a href="/users/new" ><span class="glyphicon glyphicon-log-in log"></span></a>
+              <a href="/users/new" ><span class="glyphicon glyphicon-log-in log pad-s-1"></span></a>
               <a href="/users/new" class="btn btn-default btn-md">sign up</a>
-              <a href="/sessions/new"><span class="glyphicon glyphicon-log-in log"></span></a>
+              <a href="/sessions/new"><span class="glyphicon glyphicon-log-in log pad-s-1"></span></a>
               <a href="/sessions/new" class="btn btn-default btn-md">log in</a>
 
             <% end %>
