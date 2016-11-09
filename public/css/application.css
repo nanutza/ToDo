@@ -1,0 +1,26 @@
+body{
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+    background: #E0FFFF;
+}
+.mar-t-2 {
+  margin-top: 2em;
+}
+.mar-t-3 {
+  margin-top: 3em;
+}
+.pad-s-1 {
+  padding-left: 1em;
+}
+.pipe-separate {
+  padding-left: 1em;
+  padding-right: 1em;
+  border-right: 1px solid;
+}
+.pipe-separate:first-of-type {
+  padding-left: 0;
+}

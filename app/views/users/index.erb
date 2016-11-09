@@ -1,0 +1,10 @@
+<h1> All Users </h1>
+<a href="users/new"> Add a new user </a>
+
+<div class="users">
+  <% User.all.each do |u| %>
+  <h3>
+    <img src="<%= u.avatar %>"/>
+    <%= u.username %>
+  </h3>
+  <% end %>

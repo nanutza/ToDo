@@ -1,0 +1,11 @@
+<h1>All Todo Lists</h1>
+
+<a href="/lists/new">Add a new todo_list</a>
+
+<div class="lists">
+  <ul class="list-unstyled">
+  <% List.all.each do |list| %>
+      <li><%=list.id%> )   <%=list.name%>
+  <% end %>
+</ul>
+</div>
